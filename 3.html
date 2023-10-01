@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    nav {
+      width: 100%;;
+      height: 75px;
+      line-height: 75px;
+      padding: 0px 100px;
+      position: fixed;
+      background-image: linear-gradient(#033747,#012733);
+    
+    }
+    nav ul{
+      float:left;
+    }
+    nav li{
+      display: inline-block;
+      list-style: none;
+    }
+    nav li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white ;
+  padding: 0px 30px;
+}
+nav li a:hover{
+  color: rgb(158, 88, 38);
+  transition: all 0.4s ease 0s;
+
+}
+.images img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+</style>
+    
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
+
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
